@@ -1,0 +1,444 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Βεβαιωση Ασφαλιστικής Ενημερώτητας</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	  
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:600'>
+
+      <link rel="stylesheet" href="css/style.css">
+	  
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  
+</head>
+</head>
+<style>
+@font-face {
+	font-family: 'Arimo-Bold';
+	src: url('Arimo-Bold.eot');
+	src: url('Arimo-Bold.woff') format('woff'), url('Arimo-Bold.ttf') format('truetype'), url('Arimo-Bold.svg') format('svg');
+}
+@font-face {
+	font-family: 'ChangaOne';
+	src: url('ChangaOne.eot');
+	src: url('ChangaOne.woff') format('woff'), url('ChangaOne.ttf') format('truetype'), url('ChangaOne.svg') format('svg');
+}
+@font-face {
+	font-family: 'Comfortaa-Regular';
+	src: url('Comfortaa-Regular.eot');
+	src: url('Comfortaa.woff') format('woff'), url('Comfortaa.ttf') format('truetype'), url('Comfortaa-Regular.svg') format('svg');
+}
+body {
+	background: #ededed  url("bg-header.gif") repeat-x top center;
+	line-height: 1;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+#header {
+	margin: 0 auto;
+	padding: 0;
+	width: 960px;
+}
+#header .section {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+#header .section .logo {
+	float: left;
+	margin: 0;
+	padding: 60px 0 0 10px;
+	width: 324px;
+}
+.border{ border width: 25px; border-color: black; border-style: solid;}
+#header .section ul {
+	display:inline-block;
+	float: right;
+	overflow: hidden;
+	margin:-50px 0px 0px 40px;
+	padding: 5px -10px 2px;
+}
+#header .section ul li {
+	background: url("bg-nav-right.gif") no-repeat top right;
+	display: inline-block;
+	float: left;
+	list-style: none;
+	margin: 0 10px;
+	padding: 0;
+}
+#header .section ul li a {
+	background: url("bg-nav-left.gif") no-repeat top left;
+	color: #fff;
+	display: inline-block;
+	
+	font-size: 11px;
+	letter-spacing: 0.05em;
+	line-height: 15px;
+	
+	margin: 0;
+	padding: 8px 5px 8px ;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+
+
+
+#header .section ul li button {
+	background: url("bg-nav-left.gif") no-repeat top left;
+	color: #fff;
+	display: inline-block;
+	font-size: 11px;
+	height: 30px;
+	letter-spacing: 0.05em;
+	line-height: 30px;
+	margin: 0;
+	padding: 0 5px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#header .section ul li a:hover {
+	color: yellow;
+}
+#header .section ul li.selected {
+	background: url("bg-nav-right-selected.gif") no-repeat top right;
+}
+#header .section ul li.selected a {
+	background: url("bg-nav-left-selected.gif") no-repeat top left;
+}
+
+#header .article {
+	background: #fff;
+	border: 2px solid #5fb3bd;
+	border-radius: 4px;
+	margin: 50px auto 28px;
+	overflow: hidden;
+	padding: 0;
+	width: 936px;
+}
+#header .article img {
+	display: block;
+	float: left;
+	margin: 0 50px 0 0;
+	padding: 0;
+}
+#header .article h1 {
+	color: #1b2130;
+	font-family: 'ChangaOne';
+	font-size: 20px;
+	font-weight: normal;
+	margin: 0;
+	line-height: 50px;
+	padding: 110px 30px 30px;
+}
+.languages{
+	position:absolute;
+	left:75%;
+	top:12%;
+	width:20%;
+
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+
+
+a:link {
+	
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: solid red;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.dropbtn {
+	background: url("bg-nav-right.gif" ) no-repeat top right;
+
+    color: white;
+    border: none;
+    cursor: pointer;
+
+
+}
+
+
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+.dropdown {
+    float: right;
+    position: relative;
+    display: block;
+    
+}
+
+.dropdown-content {
+	background: url("bg-nav-right.gif" ) top right;
+
+    display: none;
+    max-width: 130px;
+	max-height: 130px;
+
+    overflow: auto;
+    right: 0;
+}
+
+
+
+.dropdown a:hover {
+	background: url("bg-nav-right.gif" ) no-repeat top right;
+
+
+}
+
+.show {display:block;}
+
+.jumbotron {
+    background-color:white!important; 
+	border-color:petrol;
+	border-style:solid;
+	padding-bottom:40%;
+	padding-right:10%;
+	
+}
+.well{
+	padding-top:20%;
+}
+.well .list-group .list-group-item ul li{
+	color:grey;
+}
+
+#imaginary_container{
+    margin-top:30%; /* Don't copy this */
+}
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+
+        @media all {
+            /* media-specific rules, suitable for all devices. */
+        }
+
+        @media screen {
+            /* acreen media-specific rules */
+        }
+
+        @media only print {
+            /* Intended for paged material and for documents
+               viewed on screen in print preview mode .*/
+            main {
+                display: none;
+            }
+        }
+	#header, #nav, .noprint
+	{
+	display: none;
+	}
+
+</style>
+<body>
+<div id="header">
+	<div class="section">
+			<div class="logo">
+				<a href="index.html">
+				<img style="position:relative; bottom:60; top:5; left:-12px;" class="border" width="125px" height="125px"  src="ika.png" alt="logo ika"  >
+				</a>
+			</div>
+					<div class="container">
+						<div class="row">
+								<div class="col-sm-6 col-sm-offset-3">
+									<div id="imaginary_container"> 
+										<div class="input-group stylish-input-group">
+										<input type="text" class="form-control"  placeholder="Search" >
+										<span class="input-group-addon">
+										<button type="submit">
+										<span class="glyphicon glyphicon-search"></span>
+										</button>  
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			<ul>
+				<li class="selected">
+					<a onmouseover = "myFunction11();myFunction22();myFunction33()" href="index2.html">Αρχικη</a>
+				</li>
+				<li>
+					<div class="Dropdown">
+						<button onmouseover = "myFunction1();myFunction22();myFunction33()"   class="dropbtn">Ασφαλισμενοι</button>
+						<div  id="myDropdown1" class="dropdown-content">
+							
+							<a href="employers.html">Ασφαλιση</a>
+							
+							<a href="#about">Παροχες-Προνομια</a>
+							
+							<a href="#contact">Ενσημα</a>
+							
+							<a href="#contact">Θεμελειωση Συνταξιοδοτικου Δικαιωματος</a>
+							
+							
+
+						</div>
+					</div>			
+					</li>
+				<li>
+					<div class="Dropdown">
+						<button onmouseover="myFunction2();myFunction11();myFunction33()"  class="dropbtn">Συνταξιουχοι</button>
+						<div id="myDropdown2" class="dropdown-content">
+							
+							<a href="">Αιτηση Συνταξιοδοτησης</a>
+							
+							<a href="calculator.html">Υπολογισμος Συνταξης</a>
+							
+							<a href="benefits.html">Προνομια και Βοηθεια</a>
+							
+
+						</div>
+					</div>				
+					</li>
+				<li>
+					<div class="Dropdown">
+						<button onmouseover = "myFunction3();myFunction22();myFunction11()" class="dropbtn">Εργοδοτες</button>
+						<div id="myDropdown3" class="dropdown-content">
+							
+							<a href="employers.html">Ασφαλιση Εργαζομενου</a>
+							
+							<a href="#about">Μαζικη Ταυτοποιηση</a>
+							
+							<a href="#contact">Βεβαιωση ασφαλιστικης ενημερωτητας</a>
+							
+
+						</div>
+					</div>
+
+					
+					<script>
+					/* When the user clicks on the button, 
+					toggle between hiding and showing the dropdown content */
+					function myFunction1() {
+						
+						document.getElementById("myDropdown1").style.display='block';
+					}
+					function myFunction11() {
+						document.getElementById("myDropdown1").style.display='none';
+					}
+					
+				</script>
+				<script>
+					/* When the user clicks on the button, 
+					toggle between hiding and showing the dropdown content */
+					function myFunction2() {
+						
+						document.getElementById("myDropdown2").style.display='block';
+					}
+					function myFunction22() {
+						document.getElementById("myDropdown2").style.display='none';
+					}
+				</script>
+				<script>
+					/* When the user clicks on the button, 
+					toggle between hiding and showing the dropdown content */
+					function myFunction3() {
+						
+						document.getElementById("myDropdown3").style.display='block';
+					}
+					function myFunction33() {
+						document.getElementById("myDropdown3").style.display='none';
+					}
+				</script>
+				</li>
+				<li>
+					<a onmouseover = "myFunction11();myFunction22();myFunction33()" href="announcements.html">Ανακοινωσεις</a>
+				<li>
+					<a onmouseover = "myFunction11();myFunction22();myFunction33()" href="contact.html">Επικοινωνια</a>
+				</li>
+				<li>
+					<a onmouseover = "myFunction11();myFunction22();myFunction33()" >Εισοδος-Εγγραφη</a>
+				</li>
+				<li>
+					<a onmouseover = "myFunction11();myFunction22();myFunction33()" href="profile.php">Προφιλ</a>
+				</li>
+			</ul>
+			<div class="languages">	
+			<select>
+			<option value="Ελληνικά">Ελληνικά</option>
+			<option value="English">English</option>
+			<option value="Deutsch">Deutsch</option>
+			<option value="Franscais">Franscais</option>
+			</select>
+			</div>
+			
+		</div>
+</div>
+	<div class="container">
+		<div class="row">
+		<div class="col-md-10 order-md-10">
+					<div class="jumbotron">
+						<h4><b>ΒΕΒΑΙΩΣΗ ΑΣΦΑΛΙΣΤΙΚΗΣ ΕΝΗΜΕΡΩΤΗΤΑΣ</b><h4>
+						</br>
+						<table class="table table-bordered">
+							<tr>
+							<td rowspan="1">Ονοματεπωνυμο/Επωνυμια:</td>
+							<tr>
+							<td rowspan="1"> Α.Μ.Ε:</td>
+							</tr>
+							<tr>
+							<td rowspan="1">Α.Φ.Μ:</td>
+							
+							</tr>
+							<tr>
+						</table>
+						<p>  &#9733 Δεν οφείλει ληξιπρόθεσμες ασφαλιστικές εισφορές για το προσωπικό του/της</p>
+						</br>
+						<p>  &#9733 Για την είσπραξη εκκθαρισμένων απο το Δημόσιο,συμπεριλαμβανομένων και των εξαγωγικών επιτοκιών με τον όρο της παρακράτησης ποσού ΜΗΔΕΝ(0,00) απο κάθε ποσό που θα της καταβληθεί.</p>
+						</br>
+						<h4><b>ΙΣΧΥΕΙ ΕΠΙ ΕΝΑ ΕΤΟΣ ΑΠΟ ΤΗΝ ΕΚΔΟΣΗ ΤΗΣ</b><h4>
+						
+						
+							<main>
+							<button onclick="window.print()">Print</button>
+							</main>
+
+	
+					</div>
+				</div>
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>	
